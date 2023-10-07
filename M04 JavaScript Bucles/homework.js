@@ -13,6 +13,10 @@ function obtenerMayor(x, y) {
       return x || y;
    }
 }
+/* if (x > y) return 
+else return y */
+
+
 
 function mayoriaDeEdad(edad) {
    // Determinar si la persona puede ingresar al evento según su edad.
@@ -25,6 +29,10 @@ function mayoriaDeEdad(edad) {
       return "Not allowed";
 }
 }
+/* if (edad >= 18) return "Allowed";
+return "Not Allowed"; */
+
+
 
 function conection(status) {
    // El argumento "status" representa el estado de conexión de un usuario.
@@ -58,6 +66,13 @@ function saludo(idioma) {
       return "Hola!";
    }
 }
+/* switch (idioma) {
+   case "aleman":
+      return "Guten Tag!";
+   case 
+
+}
+ */
 
 function colors(color) {
    // La función recibe un color. Retornar el string correspondiente:
@@ -83,6 +98,8 @@ function colors(color) {
    }
 }
 
+/* 
+return(color)"This is" + (color) */
    
    //if (color === blue) {
      // return "This is blue";
@@ -104,7 +121,13 @@ function esDiezOCinco(num) {
    } else 
    return false;
 }
+/* if (num ===10 || num === 5)return true
+   return false */
 
+
+   /* return num === 10 || num === 25 ? true : false
+
+ */ //ternario 
 function estaEnRango(num) {
    // Retornar true si "num" es menor que 50 y mayor que 20.
    // De lo contrario, retornar false.
@@ -113,7 +136,8 @@ function estaEnRango(num) {
       return true;
    } else return false;
 }
-
+/* return num < 50 && num > 20 ? true : false
+ */
 function esEntero(num) {
    // Retornar true si "num" es un entero, ya sea positivo, negativo o cero.
    // Ejemplo: 0.8   ---> false
@@ -125,6 +149,9 @@ function esEntero(num) {
       return true;
    } else return false;
 }
+/* 
+if (num % 1 === 0)return true
+return false */
 
 function fizzBuzz(num) {
    // Si "num" es divisible entre 3, retorna "fizz".
@@ -140,6 +167,11 @@ function fizzBuzz(num) {
       return "buzz";
    } else return false;
 }
+/* if (num % 3 === 0) return "fizz";
+else if (num % 5 === 0) return "buzz";
+else if (num % (5*3) === 0) return "fizzbuzz";
+return false 
+ */
 
 function operadoresLogicos(num1, num2, num3) {
    // La función recibe tres números distintos.
@@ -160,6 +192,7 @@ function operadoresLogicos(num1, num2, num3) {
    } else return false;
 }
 
+
 function esPrimo(num) {
    // Retornar true si "num" es primo.
    // De lo contrario retorna false.
@@ -176,7 +209,11 @@ function esPrimo(num) {
       }
    }
    return true;
-}
+}/* 
+for ( var i = 2; i < num ; i ++){
+   (num % i === 0) return false
+   }   return  true */
+
 
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
@@ -187,6 +224,10 @@ function esVerdadero(valor) {
    } else return "Soy falso";
 }
 
+/* if (valor === true) 
+   return "Soy verdadero";
+ else return "Soy falso";
+  */
 function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
    // Caso contrario, retornar false.
@@ -195,6 +236,8 @@ function tieneTresDigitos(num) {
       return true;
    } else return false;
 }
+
+
 
 function doWhile(num) {
    // Implementar una función que aumente el valor recibido en 5 hasta un límite de 8 veces.
@@ -208,6 +251,13 @@ function doWhile(num) {
    } while (contador < 8);
    return num;
 }
+/* 
+var contador = 0
+do {
+   num = + 5
+   contador++
+} while(contador < 8)
+return num */
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
